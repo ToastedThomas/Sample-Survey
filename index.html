@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sample Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Sample Survey</h1>
+        <p id="description">This is a sample survey for demonstrational purposes.</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-question">
+          <label id="name-label" for="name">Enter your name:</label>
+          <input id="name" type="text" placeholder="John Doe" required/>
+        </div>
+        <div class="form-question">
+          <label id="email-label" for="email">Enter your email:</label>
+          <input id="email" type="email" placeholder="johndoe@example.com" required/>
+        </div>
+        <div class="form-question">
+          <label id="number-label" for="number">What is your favorite number?</label>
+          <input id="number" type="number" min="0" max="500" placeholder="0-500" />
+        </div>
+        <div class="form-question">
+          <label for="dropdown">Which of these options describes your current status?</label>
+          <select id="dropdown">
+            <option selected disabled>Select one</option>
+            <option>Student</option>
+            <option>Working Full Time</option>
+            <option>Retired</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-question">
+          <p>What is your favorite season?</p>
+          <label><input id="Spring" type="radio" name="favorite-season" value="spring" /> Spring</label>
+          <label><input id="Summer" type="radio" name="favorite-season" value="summer" /> Summer</label>
+          <label><input id="Fall" type="radio" name="favorite-season" value="fall" /> Fall</label>
+          <label><input id="Winter" type="radio" name="favorite-season" value="winter" /> Winter</label>
+        </div>
+        <div class="form-question">
+          <p>Do you own any pets?</p>
+          <label><input id="dogs" type="checkbox" value="dogs" /> Dog(s)</label>
+          <label><input id="cats" type="checkbox" value="cats" /> Cat(s)</label>
+          <label><input id="fish" type="checkbox" value="fish" /> Fish</label>
+          <label><input id="other" type="checkbox" value="other" /> Other</label>
+        </div>
+        <div class="form-question">
+          <label>Any comments or suggestions?</label>
+          <textarea rows="7" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <input id="submit" type="submit" class="submit-button" />
+      </form>
+    </main>
+  </body>
+</html>
+
+<!--reference this site https://survey-form.freecodecamp.rocks/-->

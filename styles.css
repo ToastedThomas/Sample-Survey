@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(images/background.png) no-repeat fixed;
+  background-size: cover;
+  color: #fafafa;
+  font-family: 'Helvetica';
+}
+main {
+  margin: 0 auto;
+  width: 50%;
+  min-width: 600px;
+  max-width: 700px;
+}
+header {
+  text-align: center;
+}
+form {
+  background-color: rgba(20, 20, 20, 0.75);
+  border-radius: 1em;
+  padding: 2.5em;
+  font-size: 1.25em;
+}
+.form-question {
+  margin: 0 auto 1.5em auto;
+}
+.form-question p {
+  margin: 0 0 0.5em 0;
+}
+input[type="text"], input[type="email"], input[type="number"], #dropdown, textarea {
+  width: 100%;
+  font-size: 1em;
+  font-family: inherit;
+  padding: 0.25em 0.75em;
+  border-radius: 0.3em;
+  resize: vertical;
+}
+input[type="checkbox"], input[type="radio"] {
+  min-width: 22px;
+  min-height: 22px;
+  margin: 0 0.25em 0 0;
+  vertical-align: text-bottom;
+}
+.submit-button {
+  width: 100%;
+  font-size: 0.8em;
+  padding: 0.5em;
+  background: #23CC61;
+  border: none;
+  color: #fafafa;
+  cursor: pointer;
+}
+label {
+  margin-bottom: 0.5em;
+}
+
+label, textarea {
+  display: block;
+}
+textarea {
+  min-height: 4em;
+}
+
